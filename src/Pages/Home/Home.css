@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  text-align: center;
+}
+
+.container h1 {
+  font-family: 'DREAM';
+  color: #222;
+  white-space: pre-wrap;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.2em;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .06em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+}
+
+.container p {
+  text-align: center;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'BODY';
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.8em;
+  font-size: 15px;
+  text-transform: none;
+  text-decoration: none;
+  margin: 0 0 1em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.container h2 {
+  text-align: center;
+  white-space: pre-wrap;
+  color: #222;
+  margin-bottom: 0;
+  font-family: 'dream';
+  font-weight: 100;
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+  line-height: 1em;
+  margin: 1em 0 .5em;
+  display: block;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

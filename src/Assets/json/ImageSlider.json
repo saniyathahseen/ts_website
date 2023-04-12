@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "title": "Find me on Twitter",
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/06/29/04/39/bride-1486004_960_720.jpg"
+    },
+    {
+      "title": "Welcome to Ark Labs",
+      "imageUrl": "https://cdn.pixabay.com/photo/2015/03/30/12/35/sunset-698501_960_720.jpg"
+    },
+    {
+      "title": "Some sort of third title",
+      "imageUrl": "https://cdn.pixabay.com/photo/2016/06/29/04/39/bride-1486004_960_720.jpg"
+    }
+  ]
+}
