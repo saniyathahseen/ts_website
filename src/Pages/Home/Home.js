@@ -6,27 +6,27 @@ import CarouselSlider from "./../../Shared/Components/Carousel/Carousel";
 
 const userData = {
   user1: {
-    title:"HYDERABAD",
-    url: "https://www.namanverma.com/stories/2021/5/20/trisha-and-nihaal",
+    title:"Dubai",
+    url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src:"https://cdn.pixabay.com/photo/2016/06/29/04/39/bride-1486004_960_720.jpg"
+    src:"https://drive.google.com/uc?export=view&id=1cXYFTOCLNo7H0mvm6-BPWzRXV4fqIBXY"
   },
   user2: {
-    title:"HYDERABAD",
-    url: "https://www.namanverma.com/stories/2021/5/20/trisha-and-nihaal",
+    title:"Bangalore",
+    url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src:"https://cdn.pixabay.com/photo/2015/03/30/12/35/sunset-698501_960_720.jpg"
+    src:"https://drive.google.com/uc?export=view&id=1NscLZ99LZCtnEgE3f35NE0HjGZ9p1HRn"
   },
   user3: {
     title:"HYDERABAD",
-    url: "https://www.namanverma.com/stories/2021/5/20/trisha-and-nihaal",
+    url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src:" https://cdn.pixabay.com/photo/2018/01/05/16/24/rose-3063284_960_720.jpg"
+    src:"https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"
   },
 };
 const Home = () => {
   return (
-    <div className="container">
+    <div class="container">
       <CarouselSlider />
       <h1>YOU FEEL. I FOCUS. WE FRAME</h1>
       <p>
@@ -44,12 +44,10 @@ const Home = () => {
         LIKE A RIVER FLOWS SURELY TO THE SEA, SO IT GOES SOME THINGS ARE MEANT
         TO BE.
       </h2>
-      <div className="wrapper">
-        <div className="row">
-          <ImageCards data={userData.user1} />
-          <ImageCards data={userData.user2}/>
-          <ImageCards data={userData.user3}/>
-        </div>
+      <div class="card-group">
+        <ImageCards data={userData.user1} />
+        <ImageCards data={userData.user2}/>
+        <ImageCards data={userData.user3}/>
       </div>
     </div>
   );

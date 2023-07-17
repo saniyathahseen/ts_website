@@ -1,16 +1,20 @@
 import React from "react";
 import "./Navbar.css";
 // import { FaBars } from "react-icons/fa";
-import { NavLink as Link } from "react-router-dom";
+// import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
+import Container from 'react-bootstrap/Container';
+import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-export const Nav = styled.nav`
-  height: 85px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
-  z-index: 12;
-`;
+// export const Nav = styled.nav`
+//   height: 85px;
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 0.2rem calc((100vw - 1000px) / 2);
+//   z-index: 12;
+// `;
 
 export const NavLink = styled(Link)`
   color: #808080;
@@ -53,33 +57,78 @@ white-space: nowrap; */
   }
 `;
 
-const Navbar = () => {
+const Navbars = () => {
   return (
-    <>
-      <Nav>
-        <NavMenu>
-          <NavLink to="/" activeStyle>
-            Home
-          </NavLink>
-          <NavLink to="/stories" activeStyle>
-            STORIES
-          </NavLink>
-          <NavLink to="/testimonials" activeStyle>
-            TESTIMONIALS
-          </NavLink>
-          <NavLink to="/Store" activeStyle>
-            STORE
-          </NavLink>
-          <NavLink to="/about" activeStyle>
-            ABOUT
-          </NavLink>
-          <NavLink to="/enquire" activeStyle>
-            ENQUIRE
-          </NavLink>
-        </NavMenu>
-      </Nav>
-    </>
+    <Navbar collapseOnSelect expand="lg" className="p-3">
+      <Container>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link>
+              {' '}
+              <Link className="text-decoration-none text-black" to="/">
+                HOME
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              {' '}
+              <Link className="text-decoration-none text-black" to="/stories">
+              STORIES
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              {' '}
+              <Link className="text-decoration-none text-black" to="/testimonials">
+              TESTIMONIALS
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              {' '}
+              <Link className="text-decoration-none text-black" to="/store">
+              STORE
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              {' '}
+              <Link className="text-decoration-none text-black" to="/about">
+              ABOUT
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              {' '}
+              <Link className="text-decoration-none text-black" to="/enquire">
+              ENQUIRE
+              </Link>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    // <>
+    //   <Nav>
+    //     <NavMenu>
+    //       <NavLink to="/" activeStyle>
+    //         Home
+    //       </NavLink>
+    //       <NavLink to="/stories" activeStyle>
+    //         STORIES
+    //       </NavLink>
+    //       <NavLink to="/testimonials" activeStyle>
+    //         TESTIMONIALS
+    //       </NavLink>
+    //       <NavLink to="/store" activeStyle>
+    //         STORE
+    //       </NavLink>
+    //       <NavLink to="/about" activeStyle>
+    //         ABOUT
+    //       </NavLink>
+    //       <NavLink to="/enquire" activeStyle>
+    //         ENQUIRE
+    //       </NavLink>
+    //     </NavMenu>
+    //   </Nav>
+    // </>
   );
 };
 
-export default Navbar;
+export default Navbars;

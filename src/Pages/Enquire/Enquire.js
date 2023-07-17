@@ -3,7 +3,7 @@ import React from "react";
 const Enquiry = () => {
   return (
     <div id="canvas">
-      <h1>Store page</h1>
+      <h1>Enquiry page</h1>
       <div class="page-divider"></div>
       <div class="extra-wrapper page-header">
         <div
@@ -133,7 +133,7 @@ const Enquiry = () => {
                   >
                     <div class="sqs-block-content">
                       <h2>
-                        <strong>Email: hi@namanverma.com</strong>
+                        <strong>Email: teamshadowonline@gmail.com</strong>
                       </h2>
                       <p class="">
                         You can draft an email to us on the above mentioned
@@ -219,7 +219,7 @@ const Enquiry = () => {
                 id="block-yui_3_17_2_4_1453805252430_4415"
               >
                 <div class="sqs-block-content">
-                  <h2>ⒸNAMANVERMA</h2>
+                  <h2>ⒸTEAMSHADOW</h2>
                 </div>
               </div>
             </div>
@@ -234,9 +234,8 @@ const Enquiry = () => {
           <a
             href="http://instagram.com/namanverma"
             target="_blank"
-            class="sqs-svg-icon--wrapper instagram-unauth"
-          >
-            
+            class="sqs-svg-icon--wrapper instagram-unauth" rel="noreferrer"
+          > 
           </a>
         </div>
       </footer>

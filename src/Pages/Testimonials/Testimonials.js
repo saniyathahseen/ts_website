@@ -1,37 +1,64 @@
 import React from "react";
-
+import TestimonialsCard from "./../../Shared/Components/TestimonialsCard/TestimonialsCard";
+import Carousel from "react-multi-carousel";
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+const ImgData = [{
+  title: "ImageOne",
+  src: "https://drive.google.com/uc?export=view&id=1cXYFTOCLNo7H0mvm6-BPWzRXV4fqIBXY"
+},
+{
+  title: "ImageTwo",
+  src: "https://drive.google.com/uc?export=view&id=1NscLZ99LZCtnEgE3f35NE0HjGZ9p1HRn"
+},
+{
+  title: "ImageThree",
+  src: "https://drive.google.com/uc?export=view&id=1C6_DB8yMNYk71Yyclvx0Hp8ZafBv03i_"
+},
+{
+  title: "ImageFour",
+  src: "https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"
+}];
 const Testimonials = () => {
   return (
     <div>
-      <h1>Testimonials page</h1>
-      <div class="sqs-gallery" id="yui_3_17_2_1_1668003724743_112">
-        <div
-          class="image-wrapper"
-          id="61530325b7ed3341d9fe0684"
-          data-type="image"
-          data-animation-role="image"
-        >
-          <noscript>
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/56a74ebd1c121044e144939b/1632830259276-GQDJRC4PYRFSIYHHR50H/YSAHBENAISHA.jpg"
-              alt="YSAHBENAISHA.jpg"
-            />
-          </noscript>
-          <img
-            class="thumb-image loaded"
-            data-src="https://images.squarespace-cdn.com/content/v1/56a74ebd1c121044e144939b/1632830259276-GQDJRC4PYRFSIYHHR50H/YSAHBENAISHA.jpg"
-            data-image="https://images.squarespace-cdn.com/content/v1/56a74ebd1c121044e144939b/1632830259276-GQDJRC4PYRFSIYHHR50H/YSAHBENAISHA.jpg"
-            data-image-dimensions="2162x1925"
-            data-image-focal-point="0.5,0.5"
-            data-load="false"
-            data-image-id="61530325b7ed3341d9fe0684"
-            data-type="image"
-            alt="YSAHBENAISHA.jpg"
-            data-image-resolution="2500w"
-            src="https://images.squarespace-cdn.com/content/v1/56a74ebd1c121044e144939b/1632830259276-GQDJRC4PYRFSIYHHR50H/YSAHBENAISHA.jpg?format=2500w"
-          />
-        </div>
+      <div class="container py-5 text-center">
+        <h1 class="display-4">Testimonials</h1>
       </div>
+      <Carousel
+        draggable={false}
+        showDots={false}
+        responsive={responsive}
+        infinite={true}
+        autoPlay={true}
+        autoPlaySpeed={2000}
+        keyBoardControl={true}
+        transitionDuration={1000}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px" >
+        {ImgData.map(item => (
+          <TestimonialsCard data={item}></TestimonialsCard>
+        ))}
+      </Carousel>
     </div>
   );
 };

@@ -24,19 +24,19 @@ const responsive = {
 const ImgData = {
   0: {
     title:"ImageOne",
-    src:"https://cdn.pixabay.com/photo/2016/06/29/04/39/bride-1486004_960_720.jpg"
+    src:"https://drive.google.com/uc?export=view&id=1cXYFTOCLNo7H0mvm6-BPWzRXV4fqIBXY"
   },
   1: {
     title:"ImageTwo",
-    src:"https://cdn.pixabay.com/photo/2015/03/30/12/35/sunset-698501_960_720.jpg"
+    src:"https://drive.google.com/uc?export=view&id=1NscLZ99LZCtnEgE3f35NE0HjGZ9p1HRn"
   },
   2: {
     title:"ImageThree",
-    src:" https://cdn.pixabay.com/photo/2018/01/05/16/24/rose-3063284_960_720.jpg"
+    src:"https://drive.google.com/uc?export=view&id=1C6_DB8yMNYk71Yyclvx0Hp8ZafBv03i_"
   },
   3: {
-    title:"ImageTwo",
-    src:"https://cdn.pixabay.com/photo/2015/03/30/12/35/sunset-698501_960_720.jpg"
+    title:"ImageFour",
+    src:"https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"
   },
 };
 const ImageSlider = () => {
