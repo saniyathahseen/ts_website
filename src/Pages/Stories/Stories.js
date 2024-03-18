@@ -6,7 +6,7 @@ const userData = [
     title: "Dubai",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL",
-    src: "https://drive.google.com/uc?export=view&id=1cXYFTOCLNo7H0mvm6-BPWzRXV4fqIBXY",
+    src: "../../Assets/Images/one.jpg",
     date: "june 15, 2021",
     review: "It unfolded like a scene straight out of a movie as VISHAL &amp;AISHWARYA took their last phera."
   },
@@ -14,7 +14,7 @@ const userData = [
     title: "Bangalore",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL",
-    src: "https://drive.google.com/uc?export=view&id=1NscLZ99LZCtnEgE3f35NE0HjGZ9p1HRn",
+    src: "../../Assets/Images/2.jpg",
     date: "May 20, 2021",
     review: "It unfolded like a scene straight out of a movie as VISHAL &amp;AISHWARYA took their last phera."
   },
@@ -22,7 +22,7 @@ const userData = [
     title: "HYDERABAD",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL",
-    src: "https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk",
+    src: "../../Assets/Images/3.jpg",
     date: "nov 15, 2021",
     review: "It unfolded like a scene straight out of a movie as VISHAL &amp;AISHWARYA took their last phera."
   },

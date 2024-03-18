@@ -22,19 +22,19 @@ const responsive = {
 };
 const ImgData = [{
   title: "ImageOne",
-  src: "https://drive.google.com/uc?export=view&id=1cXYFTOCLNo7H0mvm6-BPWzRXV4fqIBXY"
+  src: "../../Assets/Images/one.jpg"
 },
 {
   title: "ImageTwo",
-  src: "https://drive.google.com/uc?export=view&id=1NscLZ99LZCtnEgE3f35NE0HjGZ9p1HRn"
+  src: "../../Assets/Images/2.jpg"
 },
 {
   title: "ImageThree",
-  src: "https://drive.google.com/uc?export=view&id=1C6_DB8yMNYk71Yyclvx0Hp8ZafBv03i_"
+  src: "../../Assets/Images/3.jpg"
 },
 {
   title: "ImageFour",
-  src: "https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"
+  src: "../../Assets/Images/4.jpg"
 }];
 const Testimonials = () => {
   return (

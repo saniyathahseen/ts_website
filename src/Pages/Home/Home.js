@@ -9,19 +9,19 @@ const userData = {
     title: "Dubai",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src: "https://drive.google.com/uc?export=view&id=1cXYFTOCLNo7H0mvm6-BPWzRXV4fqIBXY"
+    src: "../../Assets/Images/one.jpg"
   },
   user2: {
     title: "Bangalore",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src: "https://drive.google.com/uc?export=view&id=1NscLZ99LZCtnEgE3f35NE0HjGZ9p1HRn"
+    src: "../../Assets/Images/2.jpg"
   },
   user3: {
     title: "HYDERABAD",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src: "https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"
+    src: "../../Assets/Images/3.jpg"
   },
 };
 const Home = () => {
