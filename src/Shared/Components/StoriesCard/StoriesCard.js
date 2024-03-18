@@ -7,12 +7,12 @@ const StoriesCard = forwardRef(({ data, mode }, ref) => {
       <div class="card-body">
         <h5 class="card-title">{data?.['desc']}A</h5>
         <div class="meta">
-              <span class="date">
-                <time class="published" datetime="2021-05-20">
-                {data?.['date']}
-                </time>
-              </span>
-            </div>
+          <span class="date">
+            <time class="published" datetime="2021-05-20">
+              {data?.['date']}
+            </time>
+          </span>
+        </div>
         <p class="card-text">{data?.['review']}</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>

@@ -1,44 +1,44 @@
 .img-container {
-    float: left;
-    height: 100% !important;
-    max-width: none !important;
-    width: auto !important;
-    cursor: pointer;
-    position: relative;
-    opacity: 1;
-    transition: opacity .3s ease-out;
-    border: 0;
-    vertical-align: middle;
-    font-family: proxima-nova;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 1.8em;
-    font-size: 15px;
-    text-transform: none;
-    text-decoration: none;
-    color: #575757;
+  float: left;
+  height: 100% !important;
+  max-width: none !important;
+  width: auto !important;
+  cursor: pointer;
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+  border: 0;
+  vertical-align: middle;
+  font-family: proxima-nova;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.8em;
+  font-size: 15px;
+  text-transform: none;
+  text-decoration: none;
+  color: #575757;
 }
 body {
-    min-height: 100vh;
-    font-family: 'DREAM';
-
+  min-height: 100vh;
+  font-family: "DREAM";
 }
 
 .social-link {
-    width: 100%;
-    height: 100%;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    border-radius: 50%;
-    transition: all 0.3s;
-    font-size: 0.9rem;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
 }
 
-.social-link:hover, .social-link:focus {
-    background: #ddd;
-    text-decoration: none;
-    color: #555;
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
 }

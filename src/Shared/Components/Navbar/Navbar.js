@@ -73,31 +73,31 @@ const Navbars = () => {
             <Nav.Link>
               {' '}
               <Link className="text-decoration-none text-black" to="/stories">
-              STORIES
+                STORIES
               </Link>
             </Nav.Link>
             <Nav.Link>
               {' '}
               <Link className="text-decoration-none text-black" to="/testimonials">
-              TESTIMONIALS
+                TESTIMONIALS
               </Link>
             </Nav.Link>
             <Nav.Link>
               {' '}
               <Link className="text-decoration-none text-black" to="/store">
-              STORE
+                STORE
               </Link>
             </Nav.Link>
             <Nav.Link>
               {' '}
               <Link className="text-decoration-none text-black" to="/about">
-              ABOUT
+                ABOUT
               </Link>
             </Nav.Link>
             <Nav.Link>
               {' '}
               <Link className="text-decoration-none text-black" to="/enquire">
-              ENQUIRE
+                ENQUIRE
               </Link>
             </Nav.Link>
           </Nav>

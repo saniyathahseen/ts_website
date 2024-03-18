@@ -235,7 +235,7 @@ const Enquiry = () => {
             href="http://instagram.com/namanverma"
             target="_blank"
             class="sqs-svg-icon--wrapper instagram-unauth" rel="noreferrer"
-          > 
+          >
           </a>
         </div>
       </footer>

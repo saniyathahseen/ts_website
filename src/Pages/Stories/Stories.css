@@ -1,60 +1,61 @@
 article {
-    display: block;
-    color: #575757;
-    font-family: proxima-nova;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 1.8em;
-    font-size: 15px;
-    text-transform: none;
-    text-decoration: none;
+  display: block;
+  color: #575757;
+  font-family: proxima-nova;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.8em;
+  font-size: 15px;
+  text-transform: none;
+  text-decoration: none;
 }
-body h1.entry-title a, body h1.entry-title a:visited {
-    color: #222;
+body h1.entry-title a,
+body h1.entry-title a:visited {
+  color: #222;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 a:-webkit-any-link {
-   
-    cursor: pointer;
-
+  cursor: pointer;
 }
-h1{
-    font-weight: 300;
-    font-style: normal;
-    line-height: 1.2em;
-    font-size: 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .06em;
+h1 {
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.2em;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.06em;
 }
 .collection-type-blog article footer .meta-row {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 div {
-    display: block;
+  display: block;
 }
-.collection-type-blog article .meta, .collection-type-blog article .meta a {
-    color: #b3b3b3;
+.collection-type-blog article .meta,
+.collection-type-blog article .meta a {
+  color: #b3b3b3;
 }
-body{
-    font-family: proxima-nova;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 1.8em;
-    font-size: 15px;
-    text-transform: none;
+body {
+  font-family: proxima-nova;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.8em;
+  font-size: 15px;
+  text-transform: none;
 }
-.meta-row:before{
-    content: "";
-    display: table;
+.meta-row:before {
+  content: "";
+  display: table;
 }
-.collection-type-blog article .meta, .collection-type-blog article .meta a {
-    color: #b3b3b3;
+.collection-type-blog article .meta,
+.collection-type-blog article .meta a {
+  color: #b3b3b3;
 }
-.meta-row:after{
-    content: "";
-        clear: both;
-    display: table;
+.meta-row:after {
+  content: "";
+  clear: both;
+  display: table;
 }

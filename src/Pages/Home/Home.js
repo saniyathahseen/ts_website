@@ -6,22 +6,22 @@ import CarouselSlider from "./../../Shared/Components/Carousel/Carousel";
 
 const userData = {
   user1: {
-    title:"Dubai",
+    title: "Dubai",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src:"https://drive.google.com/uc?export=view&id=1cXYFTOCLNo7H0mvm6-BPWzRXV4fqIBXY"
+    src: "https://drive.google.com/uc?export=view&id=1cXYFTOCLNo7H0mvm6-BPWzRXV4fqIBXY"
   },
   user2: {
-    title:"Bangalore",
+    title: "Bangalore",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src:"https://drive.google.com/uc?export=view&id=1NscLZ99LZCtnEgE3f35NE0HjGZ9p1HRn"
+    src: "https://drive.google.com/uc?export=view&id=1NscLZ99LZCtnEgE3f35NE0HjGZ9p1HRn"
   },
   user3: {
-    title:"HYDERABAD",
+    title: "HYDERABAD",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src:"https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"
+    src: "https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"
   },
 };
 const Home = () => {
@@ -46,8 +46,8 @@ const Home = () => {
       </h2>
       <div class="card-group">
         <ImageCards data={userData.user1} />
-        <ImageCards data={userData.user2}/>
-        <ImageCards data={userData.user3}/>
+        <ImageCards data={userData.user2} />
+        <ImageCards data={userData.user3} />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import "./About.css";
 const About = () => {
   return (
     <center>
-      <div class="card mb-3 text-center" style={{ maxWidth: "50rem" }}> 
+      <div class="card mb-3 text-center" style={{ maxWidth: "50rem" }}>
         <div class="card-body float-end">
           <div class="container">
             <div class="row">
