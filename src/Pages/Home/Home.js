@@ -4,26 +4,26 @@ import ImageSlider from "./../../Shared/Components/ImageSlider/ImageSlider";
 import ImageCards from "./../../Shared/Components/ImageCards/ImageCards";
 import CarouselSlider from "./../../Shared/Components/Carousel/Carousel";
 
-const userData = {
-  user1: {
+const userData = [
+  {
     title: "Dubai",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
     src: "../../Assets/Images/one.jpg"
   },
-  user2: {
+  {
     title: "Bangalore",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
     src: "../../Assets/Images/2.jpg"
   },
-  user3: {
+  {
     title: "HYDERABAD",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
     src: "../../Assets/Images/3.jpg"
   },
-};
+];
 const Home = () => {
   return (
     <div class="container">
@@ -45,9 +45,9 @@ const Home = () => {
         TO BE.
       </h2>
       <div class="card-group">
-        <ImageCards data={userData.user1} />
-        <ImageCards data={userData.user2} />
-        <ImageCards data={userData.user3} />
+        {userData.map((item) => {
+          return <ImageCards data={item} />
+        })}
       </div>
     </div>
   );

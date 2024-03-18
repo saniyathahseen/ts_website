@@ -21,24 +21,23 @@ const responsive = {
     items: 1,
   },
 };
-const ImgData = {
-  0: {
+const ImgData = [
+  {
     title: "ImageOne",
     src: "../../Assets/Images/one.jpg"
   },
-  1: {
+  {
     title: "ImageTwo",
     src: "../../Assets/Images/2.jpg"
   },
-  2: {
+  {
     title: "ImageThree",
     src: "../../Assets/Images/3.jpg"
   },
-  3: {
+  {
     title: "ImageFour",
     src: "../../Assets/Images/4.jpg"
-  },
-};
+  },];
 const ImageSlider = () => {
   return (
     <Carousel
@@ -55,34 +54,15 @@ const ImageSlider = () => {
       dotListClass="custom-dot-list-style"
       itemClass="carousel-item-padding-40-px"
     >
-      <div className="img-container">
-        <img
-          className="d-block w-100"
-          src={ImgData?.[0]?.src}
-          alt={ImgData?.[0]?.title}
-        />
-      </div>
-      <div className="img-container">
-        <img
-          className="d-block w-100"
-          src={ImgData?.[1]?.src}
-          alt={ImgData?.[1]?.title}
-        />
-      </div>
-      <div className="img-container">
-        <img
-          className="d-block w-100"
-          src={ImgData?.[2]?.src}
-          alt={ImgData?.[2]?.title}
-        />
-      </div>
-      <div className="img-container">
-        <img
-          className="d-block w-100"
-          src={ImgData?.[3]?.src}
-          alt={ImgData?.[3]?.title}
-        />
-      </div>
+      {ImgData.map((item) => {
+        return <div className="img-container">
+          <img
+            className="d-block w-100"
+            src={item?.src}
+            alt={item?.title}
+          />
+        </div>
+      })}
     </Carousel>
   );
 };
