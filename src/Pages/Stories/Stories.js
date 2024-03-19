@@ -31,7 +31,7 @@ const About = () => {
   let listItems = userData.map(
     (element) => {
       return (
-        <StoriesCard data={element} />
+        <StoriesCard data={element} key={element.title} />
       )
     });
   return (

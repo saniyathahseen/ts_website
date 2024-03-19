@@ -27,7 +27,7 @@ const userData = [
 const Home = () => {
   return (
     <div className="container">
-      <CarouselSlider />
+      <CarouselSlider key={"CarouselSlider"} />
       <h1>YOU FEEL. I FOCUS. WE FRAME</h1>
       <p>
         A wedding is a validation coupled with the showcase of Love inclusive of
@@ -38,14 +38,14 @@ const Home = () => {
         A chronology of a couple’s journey where they vow together to be One.
       </p>
       <h2>we are creating fiction out of reality.</h2>
-      <ImageSlider />
+      <ImageSlider key={"ImageSlider"} />
       <h1>REAL LOVE STORIES</h1>
       <h2>
         LIKE A RIVER FLOWS SURELY TO THE SEA, SO IT GOES SOME THINGS ARE MEANT TO BE.
       </h2>
       <div className="card-group">
         {userData.map((item) => {
-          return <ImageCards data={item} />
+          return <ImageCards data={item} key={item.title} />
         })}
       </div>
     </div>

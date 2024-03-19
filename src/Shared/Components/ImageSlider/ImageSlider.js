@@ -55,7 +55,7 @@ const ImageSlider = () => {
       itemClass="carousel-item-padding-40-px"
     >
       {ImgData.map((item) => {
-        return <div className="img-container">
+        return <div className="img-container" key={item.title}>
           <img
             className="d-block w-100"
             src={item?.src}

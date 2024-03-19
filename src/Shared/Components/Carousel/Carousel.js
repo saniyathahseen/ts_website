@@ -26,7 +26,7 @@ const CarouselSlider = () => {
     >
       <Carousel fade touch="true">
         {ImgData.map((item) => {
-          return <Carousel.Item interval={2500}>
+          return <Carousel.Item interval={2500} key={item.title}>
             <img
               className="d-block w-100"
               src={item?.src}

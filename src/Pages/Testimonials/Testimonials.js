@@ -56,7 +56,7 @@ const Testimonials = () => {
         dotListclassName="custom-dot-list-style"
         itemclassName="carousel-item-padding-40-px" >
         {ImgData.map(item => (
-          <TestimonialsCard data={item}></TestimonialsCard>
+          <TestimonialsCard data={item} key={item.title}></TestimonialsCard>
         ))}
       </Carousel>
     </div>
