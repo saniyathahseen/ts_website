@@ -22,7 +22,7 @@ const ImgData = [
 const CarouselSlider = () => {
   return (
     <div
-      class="container"
+      className="container"
     >
       <Carousel fade touch="true">
         {ImgData.map((item) => {

@@ -39,8 +39,8 @@ const ImgData = [{
 const Testimonials = () => {
   return (
     <div>
-      <div class="container py-5 text-center">
-        <h1 class="display-4">Testimonials</h1>
+      <div className="container py-5 text-center">
+        <h1 className="display-4">Testimonials</h1>
       </div>
       <Carousel
         draggable={false}
@@ -51,10 +51,10 @@ const Testimonials = () => {
         autoPlaySpeed={2000}
         keyBoardControl={true}
         transitionDuration={1000}
-        containerClass="carousel-container"
+        containerclassName="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px" >
+        dotListclassName="custom-dot-list-style"
+        itemclassName="carousel-item-padding-40-px" >
         {ImgData.map(item => (
           <TestimonialsCard data={item}></TestimonialsCard>
         ))}

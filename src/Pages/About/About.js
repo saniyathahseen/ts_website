@@ -4,16 +4,16 @@ import "./About.css";
 const About = () => {
   return (
     <center>
-      <div class="card mb-3 text-center" style={{ maxWidth: "50rem" }}>
-        <div class="card-body float-end">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <img class="card-img-top float-start" src="https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk" alt="https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"></img>
+      <div className="card mb-3 text-center" style={{ maxWidth: "50rem" }}>
+        <div className="card-body float-end">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <img className="card-img-top float-start" src="https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk" alt="https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"></img>
               </div>
-              <div class="col">
-                <h1 class="card-title">Teamshadow Weddings</h1>
-                <div class="meta card-text">
+              <div className="col">
+                <h1 className="card-title">Teamshadow Weddings</h1>
+                <div className="meta card-text">
                   <p>
                     <strong>Moment. Memory. Miracle.</strong>
                   </p>
@@ -37,7 +37,7 @@ const About = () => {
                     <strong>People. Photographs. Perfection.</strong>
                   </p>
                 </div>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>

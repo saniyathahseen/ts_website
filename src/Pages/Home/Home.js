@@ -26,7 +26,7 @@ const userData = [
 ];
 const Home = () => {
   return (
-    <div class="container">
+    <div className="container">
       <CarouselSlider />
       <h1>YOU FEEL. I FOCUS. WE FRAME</h1>
       <p>
@@ -41,10 +41,9 @@ const Home = () => {
       <ImageSlider />
       <h1>REAL LOVE STORIES</h1>
       <h2>
-        LIKE A RIVER FLOWS SURELY TO THE SEA, SO IT GOES SOME THINGS ARE MEANT
-        TO BE.
+        LIKE A RIVER FLOWS SURELY TO THE SEA, SO IT GOES SOME THINGS ARE MEANT TO BE.
       </h2>
-      <div class="card-group">
+      <div className="card-group">
         {userData.map((item) => {
           return <ImageCards data={item} />
         })}
