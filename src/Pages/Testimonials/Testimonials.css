@@ -13,11 +13,10 @@ img {
   line-height: 1px;
 }
 font-weightbody {
-  font-family: Helvetica, arial, sans-serif;
   font-weight: normal;
   line-height: 1.6em;
   font-size: 12px;
-  font-family: proxima-nova;
+  font-family: "futura-pt";
   font-weight: 300;
   font-style: normal;
   line-height: 1.8em;

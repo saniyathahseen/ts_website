@@ -9,7 +9,7 @@ const About = () => {
           <div className="container">
             <div className="row">
               <div className="col">
-                <img className="card-img-top float-start" src="https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk" alt="https://drive.google.com/uc?export=view&id=1YTcfJa-Htm7nCnABGj33Ly0cfUEKH3dk"></img>
+                <img className="card-img-top float-start" src="../../Assets/Images/3.jpg" alt="placeholderimage"></img>
               </div>
               <div className="col">
                 <h1 className="card-title">Teamshadow Weddings</h1>

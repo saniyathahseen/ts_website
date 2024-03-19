@@ -1,7 +1,7 @@
 article {
   display: block;
   color: #575757;
-  font-family: proxima-nova;
+  font-family: "futura-pt";
   font-weight: 300;
   font-style: normal;
   line-height: 1.8em;
@@ -39,7 +39,7 @@ div {
   color: #b3b3b3;
 }
 body {
-  font-family: proxima-nova;
+  font-family: "futura-pt";
   font-weight: 300;
   font-style: normal;
   line-height: 1.8em;

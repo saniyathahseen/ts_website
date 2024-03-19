@@ -45,7 +45,7 @@
 }
 
 .container h1 {
-  font-family: "DREAM";
+  font-family: "futura-pt";
   color: #222;
   white-space: pre-wrap;
   font-weight: 300;
@@ -63,7 +63,7 @@
   text-align: center;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-family: "BODY";
+  font-family: "futura-pt";
   font-weight: 300;
   font-style: normal;
   line-height: 1.8em;
@@ -83,7 +83,7 @@
   white-space: pre-wrap;
   color: #222;
   margin-bottom: 0;
-  font-family: "dream";
+  font-family: "futura-pt";
   font-weight: 100;
   font-size: 12px;
   letter-spacing: 0.1em;
