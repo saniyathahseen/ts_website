@@ -3,25 +3,29 @@ import "./Home.css";
 import ImageSlider from "./../../Shared/Components/ImageSlider/ImageSlider";
 import ImageCards from "./../../Shared/Components/ImageCards/ImageCards";
 import CarouselSlider from "./../../Shared/Components/Carousel/Carousel";
+import img1 from "./../../Assets/Images/1.jpg"
+import img2 from "./../../Assets/Images/2.jpg"
+import img3 from "./../../Assets/Images/3.jpg"
+
 
 const userData = [
   {
     title: "Dubai",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src: "../../Assets/Images/one.jpg"
+    src: img1
   },
   {
     title: "Bangalore",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src: "../../Assets/Images/2.jpg"
+    src: img2
   },
   {
     title: "HYDERABAD",
     url: "http://localhost:3000/stories/2021/5/20/trisha-and-nihaal",
     desc: "TRISHA X NIHAAL // HYDERABAD",
-    src: "../../Assets/Images/3.jpg"
+    src: img3
   },
 ];
 const Home = () => {

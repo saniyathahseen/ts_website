@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import img4 from "./../../Assets/Images/4.jpg"
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
           <div className="container">
             <div className="row">
               <div className="col">
-                <img className="card-img-top float-start" src="../../Assets/Images/3.jpg" alt="placeholderimage"></img>
+                <img className="card-img-top float-start" src={img4} alt="placeholderimage"></img>
               </div>
               <div className="col">
                 <h1 className="card-title">Teamshadow Weddings</h1>

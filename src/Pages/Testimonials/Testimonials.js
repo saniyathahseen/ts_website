@@ -1,6 +1,11 @@
 import React from "react";
 import TestimonialsCard from "./../../Shared/Components/TestimonialsCard/TestimonialsCard";
 import Carousel from "react-multi-carousel";
+import img1 from "./../../Assets/Images/1.jpg"
+import img2 from "./../../Assets/Images/2.jpg"
+import img3 from "./../../Assets/Images/3.jpg"
+import img4 from "./../../Assets/Images/4.jpg"
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -22,19 +27,19 @@ const responsive = {
 };
 const ImgData = [{
   title: "ImageOne",
-  src: "../../Assets/Images/one.jpg"
+  src: img1
 },
 {
   title: "ImageTwo",
-  src: "../../Assets/Images/2.jpg"
+  src: img2
 },
 {
   title: "ImageThree",
-  src: "../../Assets/Images/3.jpg"
+  src: img3
 },
 {
   title: "ImageFour",
-  src: "../../Assets/Images/4.jpg"
+  src: img4
 }];
 const Testimonials = () => {
   return (

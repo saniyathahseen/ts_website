@@ -1,22 +1,27 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Carousel from "react-bootstrap/Carousel";
+import img1 from "./../../../Assets/Images/1.jpg"
+import img2 from "./../../../Assets/Images/2.jpg"
+import img3 from "./../../../Assets/Images/3.jpg"
+import img4 from "./../../../Assets/Images/4.jpg"
+
 const ImgData = [
   {
     title: "ImageOne",
-    src: "../../Assets/Images/one.jpg"
+    src: img1
   },
   {
     title: "ImageTwo",
-    src: "../../Assets/Images/2.jpg"
+    src: img2
   },
   {
     title: "ImageThree",
-    src: "../../Assets/Images/3.jpg"
+    src: img3
   },
   {
     title: "ImageFour",
-    src: "../../Assets/Images/4.jpg"
+    src: img4
   },
 ];
 const CarouselSlider = () => {
