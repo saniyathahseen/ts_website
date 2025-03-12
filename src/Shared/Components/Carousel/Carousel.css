@@ -1,16 +1,39 @@
-.container {
-  left: calc(50% - 100px);
-  top: calc(50% - 100px);
+/* Main Container */
+.carousel-container {
+  width: 80%;
+  margin: 40px auto;
   text-align: center;
 }
-.container Carousel {
-  padding-left: 17px;
-  padding-right: 17px;
-  position: relative;
-  height: auto;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  display: block;
-  clear: both;
-  width: 600px;
+
+/* Image Styling */
+.carousel-image {
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Caption Styling */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 95%;
+  }
+
+  .carousel-image {
+    max-height: 300px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
 }

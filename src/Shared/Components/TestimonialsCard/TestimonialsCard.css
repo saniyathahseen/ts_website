@@ -1,44 +1,73 @@
-.img-container {
-  float: left;
-  height: 100% !important;
-  max-width: none !important;
-  width: auto !important;
-  cursor: pointer;
-  position: relative;
-  opacity: 1;
-  transition: opacity 0.3s ease-out;
-  border: 0;
-  vertical-align: middle;
-  font-family: "futura-pt";
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.8em;
-  font-size: 15px;
-  text-transform: none;
-  text-decoration: none;
-  color: #575757;
-}
-body {
-  min-height: 100vh;
-  font-family: "futura-pt";
-}
-
-.social-link {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #ddd;
-  display: flex;
-  align-items: center;
+/* Card Container */
+.testimonial-card {
+  /* display: flex; */
   justify-content: center;
-  color: #666;
-  border-radius: 50%;
-  transition: all 0.3s;
-  font-size: 0.9rem;
+  align-items: center;
+  margin: 30px auto; /* Centering and spacing */
+  max-width: 450px;
 }
 
-.social-link:hover,
-.social-link:focus {
-  background: #ddd;
-  text-decoration: none;
+/* Testimonial Content */
+.testimonial-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-content:hover {
+  transform: scale(1.05);
+}
+
+/* Image Styling */
+.img-fluid {
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  width: 300px; /* Increased size */
+  height: 300px;
+}
+
+/* Blockquote Styling */
+.blockquote-custom {
+  font-style: italic;
+  font-size: 18px;
   color: #555;
+  border-left: 5px solid #6b6032;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+.blockquote-custom h4 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blockquote-custom p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Adjust spacing for responsiveness */
+@media (max-width: 768px) {
+  .testimonial-card {
+    margin: 20px auto;
+  }
+
+  .testimonial-content {
+    padding: 20px;
+  }
+
+  .img-fluid {
+    width: 100px;
+    height: 100px;
+  }
+
+  .blockquote-custom {
+    font-size: 16px;
+    padding-left: 10px;
+  }
 }

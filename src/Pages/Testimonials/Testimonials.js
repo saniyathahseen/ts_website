@@ -1,67 +1,45 @@
 import React from "react";
 import TestimonialsCard from "./../../Shared/Components/TestimonialsCard/TestimonialsCard";
 import Carousel from "react-multi-carousel";
-import img1 from "./../../Assets/Images/1.jpg"
-import img2 from "./../../Assets/Images/2.jpg"
-import img3 from "./../../Assets/Images/3.jpg"
-import img4 from "./../../Assets/Images/4.jpg"
+import "react-multi-carousel/lib/styles.css"; // Ensure the styles are applied
+import img1 from "./../../Assets/Images/testimonials/1.jpg";
+import img2 from "./../../Assets/Images/testimonials/2.jpg";
+import img3 from "./../../Assets/Images/testimonials/3.jpg";
+import img4 from "./../../Assets/Images/testimonials/4.jpg";
 
 const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
+  superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5 },
+  desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
+  tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
+  mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
 };
-const ImgData = [{
-  title: "ImageOne",
-  src: img1
-},
-{
-  title: "ImageTwo",
-  src: img2
-},
-{
-  title: "ImageThree",
-  src: img3
-},
-{
-  title: "ImageFour",
-  src: img4
-}];
+
+const ImgData = [
+  { title: "Image One", src: img1 },
+  { title: "Image Two", src: img2 },
+  { title: "Image Three", src: img3 },
+  { title: "Image Four", src: img4 },
+];
+
 const Testimonials = () => {
   return (
-    <div>
-      <div className="container py-5 text-center">
-        <h1 className="display-4">Testimonials</h1>
-      </div>
+    <div className="testimonials-container">
       <Carousel
-        draggable={false}
-        showDots={false}
+        draggable={true}
+        showDots={true}
         responsive={responsive}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={2000}
+        autoPlaySpeed={3000}
         keyBoardControl={true}
-        transitionDuration={1000}
-        containerclassName="carousel-container"
+        transitionDuration={800}
+        containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
-        dotListclassName="custom-dot-list-style"
-        itemclassName="carousel-item-padding-40-px" >
-        {ImgData.map(item => (
-          <TestimonialsCard data={item} key={item.title}></TestimonialsCard>
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding"
+      >
+        {ImgData.map((item) => (
+          <TestimonialsCard data={item} key={item.title} />
         ))}
       </Carousel>
     </div>

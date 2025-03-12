@@ -1,25 +1,27 @@
-import React from "react";
-import "./TestimonialsCard.css"
-import "react-multi-carousel/lib/styles.css";
-import { forwardRef } from "react";
-const TestimonialsCard = forwardRef(({ data, mode }, ref) => {
+import React, { forwardRef } from "react";
+import "./TestimonialsCard.css";
+
+const TestimonialsCard = forwardRef(({ data }, ref) => {
     return (
-        <div className="img-container">
-            {/* eslint-disable-next-line jsx-a11y/alt-text */}
-            <div className="bg-white text-center rounded shadow-sm py-5 px-4"><img src={data?.src} alt={data?.title} width="100" className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" />
-                <h5 className="mb-0">Manuella Nevoresky</h5><span className="small text-uppercase text-muted">CEO - Founder</span>
-                <blockquote className="blockquote blockquote-custom bg-white p-5 shadow rounded">
-                    <h3>Shirley Fultz</h3>
-                    <h4>Designer</h4>
-                    <p>
-                        It's freeing to be able to catch up on customized news and not be
-                        distracted by a social media element on the same site
-                    </p>
+        <div className="testimonial-card">
+            <div className="testimonial-content text-center rounded shadow-sm py-5 px-4">
+                {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                <img
+                    src={data?.src}
+                    alt={data?.title}
+                    className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+                    width="100"
+                />
+                <h5 className="mb-0">{data?.name || "John Doe"}</h5>
+                <span className="small text-uppercase text-muted">{data?.position || "Founder"}</span>
+
+                <blockquote className="blockquote-custom bg-white p-4 shadow rounded mb-5 text-center">
+                    <h4 className="mb-3 font-weight-bold">{data?.title || "Testimonial"}</h4>
+                    <p className="text-muted fst-italic">{data?.review || "This is a sample testimonial text."}</p>
                 </blockquote>
             </div>
         </div>
     );
 });
-
 
 export default TestimonialsCard;

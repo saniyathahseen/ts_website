@@ -1,33 +1,37 @@
-.sqs-gallery-block-stacked .image-wrapper img {
-  width: 100%;
-}
-img[data-src] {
-  transition: opacity 0.3s ease-out;
-}
-img {
-  border: 0;
-  padding: 10%;
-  vertical-align: middle;
-}
-.sqs-gallery-block-stacked .image-wrapper {
-  line-height: 1px;
-}
-font-weightbody {
-  font-weight: normal;
-  line-height: 1.6em;
-  font-size: 12px;
-  font-family: "futura-pt";
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.8em;
-  font-size: 15px;
-  text-transform: none;
-  text-decoration: none;
+/* Main Container */
+.testimonials-container {
+  text-align: center;
+  padding: 10px;
   background-color: #f5f1eb;
-  color: #575757;
-  background-image: none;
-  background-position: top left;
-  background-size: auto;
-  background-attachment: scroll;
-  background-repeat: repeat;
+}
+
+/* Section Title */
+.section-title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Carousel Styling */
+.carousel-container {
+  max-width: 80%;
+  margin: 10 auto;
+}
+
+.carousel-item-padding {
+  padding: 10px;
+}
+
+.custom-dot-list-style {
+  bottom: -20px;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 95%;
+  }
+}
+.react-multi-carousel-dot-list {
+  margin: -3;
 }

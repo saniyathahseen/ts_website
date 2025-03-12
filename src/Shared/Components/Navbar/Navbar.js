@@ -1,35 +1,27 @@
 import React from "react";
 import "./Navbar.css";
-import Container from 'react-bootstrap/Container';
-import { Link } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Link } from "react-router-dom";
+import { Container, Nav, Navbar } from "react-bootstrap";
+// import logo from "../../Assets/Images/logo.png"; // Add a logo
 
 const Navbars = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="p-3">
+    <Navbar collapseOnSelect expand="lg" className="navbar-custom">
       <Container>
+        {/* Brand/Logo */}
+        <Navbar.Brand as={Link} to="/">
+          {/* <img src={logo} alt="Logo" className="navbar-logo" /> */}
+        </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={Link} className="text-decoration-none text-black" to="/">
-              HOME
-            </Nav.Link>
-            <Nav.Link as={Link} className="text-decoration-none text-black" to="/stories">
-              STORIES
-            </Nav.Link>
-            <Nav.Link as={Link} className="text-decoration-none text-black" to="/testimonials">
-              TESTIMONIALS
-            </Nav.Link>
-            <Nav.Link as={Link} className="text-decoration-none text-black" to="/store">
-              FILM
-            </Nav.Link>
-            <Nav.Link as={Link} className="text-decoration-none text-black" to="/about">
-              ABOUT
-            </Nav.Link>
-            <Nav.Link as={Link} className="text-decoration-none text-black" to="/enquire">
-              ENQUIRE
-            </Nav.Link>
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/">HOME</Nav.Link>
+            <Nav.Link as={Link} to="/stories">STORIES</Nav.Link>
+            <Nav.Link as={Link} to="/testimonials">TESTIMONIALS</Nav.Link>
+            <Nav.Link as={Link} to="/film">FILM</Nav.Link>
+            <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
+            <Nav.Link as={Link} to="/enquire">ENQUIRE</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

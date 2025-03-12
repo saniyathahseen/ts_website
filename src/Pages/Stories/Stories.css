@@ -1,61 +1,114 @@
-article {
-  display: block;
-  color: #575757;
-  font-family: "futura-pt";
+/* General Styles */
+body {
+  font-family: "futura-pt", sans-serif;
   font-weight: 300;
-  font-style: normal;
+  font-size: 1rem;
   line-height: 1.8em;
-  font-size: 15px;
+  color: #575757;
   text-transform: none;
-  text-decoration: none;
 }
-body h1.entry-title a,
-body h1.entry-title a:visited {
-  color: #222;
-}
-a {
-  text-decoration: none;
-}
-a:-webkit-any-link {
-  cursor: pointer;
-}
+
+/* Headings */
 h1 {
   font-weight: 300;
-  font-style: normal;
   line-height: 1.2em;
-  font-size: 2em;
+  font-size: 2rem;
   text-transform: uppercase;
-  text-decoration: none;
   letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+  text-align: center;
 }
-.collection-type-blog article footer .meta-row {
-  margin: 1em 0;
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
-div {
-  display: block;
+
+a:hover {
+  color: #222;
 }
-.collection-type-blog article .meta,
-.collection-type-blog article .meta a {
-  color: #b3b3b3;
+
+/* Container for Stories */
+.stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
-body {
-  font-family: "futura-pt";
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.8em;
-  font-size: 15px;
-  text-transform: none;
+
+/* Individual Stories Card */
+.stories-card {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
-.meta-row:before {
-  content: "";
-  display: table;
+
+.stories-card:hover {
+  transform: scale(1.05);
 }
-.collection-type-blog article .meta,
-.collection-type-blog article .meta a {
-  color: #b3b3b3;
+
+/* Image */
+.stories-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.meta-row:after {
-  content: "";
-  clear: both;
-  display: table;
+
+/* Card Content */
+.stories-card .content {
+  padding: 15px;
+  text-align: center;
+}
+
+.stories-card h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.stories-card p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .stories-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stories-card {
+    flex: 1 1 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .stories-card h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .stories-card h2 {
+    font-size: 1.2rem;
+  }
+  .stories-card p {
+    font-size: 0.9rem;
+  }
 }

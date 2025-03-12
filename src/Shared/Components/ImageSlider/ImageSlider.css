@@ -1,20 +1,38 @@
+/* Carousel Container */
+.slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Image Styling */
 .img-container {
-  float: left;
-  height: 100% !important;
-  max-width: none !important;
-  width: auto !important;
-  cursor: pointer;
-  position: relative;
-  opacity: 1;
-  transition: opacity 0.3s ease-out;
-  border: 0;
-  vertical-align: middle;
-  font-family: "futura-pt";
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.8em;
-  font-size: 15px;
-  text-transform: none;
-  text-decoration: none;
-  color: #575757;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image:hover {
+  transform: scale(1.05);
+}
+
+/* Custom Styling for Dots */
+.custom-dot-list-style {
+  position: absolute;
+  bottom: 10px;
+}
+
+.carousel-item-padding {
+  padding: 10px;
 }
