@@ -60,6 +60,7 @@ const ImageSlider = () => {
     >
       {ImgData.map((item) => {
         return <div className="img-container" key={item.title}>
+          {/* eslint-disable-next-line jsx-a11y/alt-text */}
           <img
             className="d-block w-100"
             src={item?.src}

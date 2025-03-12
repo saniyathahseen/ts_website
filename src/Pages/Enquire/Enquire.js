@@ -5,8 +5,8 @@ import img3 from "./../../Assets/Images/3.jpg"
 const Enquiry = () => {
   const [formData, setFormData] = useState({
     fullName: '',
-    email: '',
-    telephone: '',
+    spauseName: '',
+    spausePhoneNumber: '',
     venue: '',
     weddingDate: '',
     message: ''
@@ -26,14 +26,19 @@ const Enquiry = () => {
     // Reset form fields
     setFormData({
       fullName: '',
-      email: '',
-      telephone: '',
+      spauseName: '',
+      spausePhoneNumber: '',
       venue: '',
       weddingDate: '',
       message: ''
     });
   };
-
+  // Generate WhatsApp message URL
+  const getWhatsAppLink = () => {
+    const phoneNumber = "7994716667"; // Replace with your WhatsApp number
+    const text = `Hello, I am ${formData.fullName}. My spouse's name is ${formData.spauseName}, and their contact number is ${formData.spausePhoneNumber}. We are planning our wedding at ${formData.venue} on ${formData.weddingDate}. Additional details: ${formData.message}.`;
+    return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+  };
 
   return (
     <div id="canvas">
@@ -66,25 +71,24 @@ const Enquiry = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email<span>*</span></label>
+              <label htmlFor="spauseName">Spause Name<span>*</span></label>
               <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
+                type="text"
+                id="spauseName"
+                name="spauseName"
+                value={formData.spauseName}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="form-group">
-              <label htmlFor="telephone">Telephone<span>*</span></label>
+              <label htmlFor="spausePhoneNumber">Spause Phone Number</label>
               <input
                 type="tel"
-                id="telephone"
-                name="telephone"
-                value={formData.telephone}
+                id="spausePhoneNumber"
+                name="spausePhoneNumber"
+                value={formData.spausePhoneNumber}
                 onChange={handleChange}
-                required
               />
             </div>
             <div className="form-group">
@@ -119,7 +123,11 @@ const Enquiry = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button type="button" className="whatsapp-btn">
+              <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
+              </a>
+            </button>
           </form>
         </div>
       </center>

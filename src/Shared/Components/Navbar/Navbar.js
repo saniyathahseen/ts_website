@@ -22,7 +22,7 @@ const Navbars = () => {
               TESTIMONIALS
             </Nav.Link>
             <Nav.Link as={Link} className="text-decoration-none text-black" to="/store">
-              STORE
+              FILM
             </Nav.Link>
             <Nav.Link as={Link} className="text-decoration-none text-black" to="/about">
               ABOUT

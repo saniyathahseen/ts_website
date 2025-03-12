@@ -32,6 +32,7 @@ const CarouselSlider = () => {
       <Carousel fade touch="true">
         {ImgData.map((item) => {
           return <Carousel.Item interval={2500} key={item.title}>
+            {/* eslint-disable-next-line jsx-a11y/alt-text */}
             <img
               className="d-block w-100"
               src={item?.src}
