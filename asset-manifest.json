@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/ts_website/static/css/main.1bc001a7.chunk.css",
+    "main.js": "/ts_website/static/js/main.83a762ce.chunk.js",
+    "main.js.map": "/ts_website/static/js/main.83a762ce.chunk.js.map",
+    "runtime-main.js": "/ts_website/static/js/runtime-main.c776e357.js",
+    "runtime-main.js.map": "/ts_website/static/js/runtime-main.c776e357.js.map",
+    "static/css/2.b4efd5b8.chunk.css": "/ts_website/static/css/2.b4efd5b8.chunk.css",
+    "static/js/2.b1f3a188.chunk.js": "/ts_website/static/js/2.b1f3a188.chunk.js",
+    "static/js/2.b1f3a188.chunk.js.map": "/ts_website/static/js/2.b1f3a188.chunk.js.map",
+    "static/js/3.eff61ce7.chunk.js": "/ts_website/static/js/3.eff61ce7.chunk.js",
+    "static/js/3.eff61ce7.chunk.js.map": "/ts_website/static/js/3.eff61ce7.chunk.js.map",
+    "index.html": "/ts_website/index.html",
+    "precache-manifest.a74fe7728116cc1ae32cd43d0c44b3c0.js": "/ts_website/precache-manifest.a74fe7728116cc1ae32cd43d0c44b3c0.js",
+    "service-worker.js": "/ts_website/service-worker.js",
+    "static/css/2.b4efd5b8.chunk.css.map": "/ts_website/static/css/2.b4efd5b8.chunk.css.map",
+    "static/css/main.1bc001a7.chunk.css.map": "/ts_website/static/css/main.1bc001a7.chunk.css.map",
+    "static/js/2.b1f3a188.chunk.js.LICENSE.txt": "/ts_website/static/js/2.b1f3a188.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/ts_website/static/media/1.e035e322.jpg",
+    "static/media/10.jpg": "/ts_website/static/media/10.3884d0df.jpg",
+    "static/media/11.jpg": "/ts_website/static/media/11.fdf90a35.jpg",
+    "static/media/2.jpg": "/ts_website/static/media/2.d8a04cce.jpg",
+    "static/media/3.jpg": "/ts_website/static/media/3.a0051c4b.jpg",
+    "static/media/4.jpg": "/ts_website/static/media/4.6ab2bda9.jpg",
+    "static/media/5.jpg": "/ts_website/static/media/5.ee215d48.jpg",
+    "static/media/6.jpg": "/ts_website/static/media/6.44d93010.jpg",
+    "static/media/7.jpg": "/ts_website/static/media/7.e9b98694.jpg",
+    "static/media/8.jpg": "/ts_website/static/media/8.c1ed4bd0.jpg",
+    "static/media/9.jpg": "/ts_website/static/media/9.6363623d.jpg",
+    "static/media/styles.css": "/ts_website/static/media/revicons.2feb69cc.eot"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c776e357.js",
+    "static/css/2.b4efd5b8.chunk.css",
+    "static/js/2.b1f3a188.chunk.js",
+    "static/css/main.1bc001a7.chunk.css",
+    "static/js/main.83a762ce.chunk.js"
+  ]
+}
