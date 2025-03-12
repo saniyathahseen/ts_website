@@ -11,7 +11,7 @@ import "./App.css"; // Import a CSS file for global styles
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL || "/"}>
       <div className="app-container">
         <Navbar />
         <main className="content">
