@@ -19,7 +19,7 @@
 }
 
 .navbar-custom .nav-link:hover {
-  color: #007bff !important;
+  color: #91742b !important;
 }
 
 /* Navbar Toggle Button */
@@ -36,4 +36,17 @@
     padding: 10px;
     background: white;
   }
+}
+body {
+  padding-top: 80px; /* Adjust this based on navbar height */
+}
+
+.navbar {
+  z-index: 1050; /* Ensures navbar stays on top */
+  width: 100%;
+}
+
+/* Add spacing after navbar */
+.main-content {
+  padding-top: 20px; /* Adjust padding as needed */
 }

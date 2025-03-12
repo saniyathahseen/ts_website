@@ -4,7 +4,7 @@ const Store = () => {
 	return (
 		<div>
 			<h1>
-				Store page
+				film page
 			</h1>
 		</div>
 	);
