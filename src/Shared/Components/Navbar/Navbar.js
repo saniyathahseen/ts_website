@@ -9,11 +9,11 @@ const Navbars = () => {
   const [expanded, setExpanded] = useState(false);
 
   const handleNavClick = () => {
-    setExpanded(false);
+    setExpanded(false); // Close the navbar on mobile after clicking a link
   };
 
   return (
-    <Navbar fixed="top" expand="lg" className="p-1 bg-white shadow" expanded={expanded}>
+    <Navbar fixed="top" expand="lg" className="navbar-custom" expanded={expanded}>
       <Container>
         {/* Title/Brand */}
         <Navbar.Brand as={Link} to="/" className="navbar-title">
@@ -21,9 +21,11 @@ const Navbars = () => {
         </Navbar.Brand>
 
         {/* Toggle button for mobile */}
-        <Navbar.Toggle aria-controls="responsive-navbar-nav"
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
           onClick={() => setExpanded(expanded ? false : true)}
         />
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/" onClick={handleNavClick}>
