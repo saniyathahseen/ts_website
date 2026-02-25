@@ -10,13 +10,31 @@
 }
 
 .footer {
-  text-align: center;
+  text-align: center; /* keep footer text centered */
   background: #222;
   color: #fff;
-  padding: 10px;
+  padding: 10px 20px;
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+/* Position only the logo on the left without affecting centered text */
+.footer-logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    left: 10px;
+    height: 32px;
+  }
 }
 
 .text-footer {

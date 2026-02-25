@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "./Navbar.css";
+import asset5 from "../../../Assets/Images/Asset5.png";
 
 const Navbars = () => {
   const [expanded, setExpanded] = useState(false);
@@ -17,7 +18,8 @@ const Navbars = () => {
       <Container>
         {/* Title/Brand */}
         <Navbar.Brand as={Link} to="/" className="navbar-title">
-          Teamshadow Weddings
+          {/* Teamshadow Weddingss */}
+          <img className="navbar-logo" src={asset5} alt="Navbar logo" />
         </Navbar.Brand>
 
         {/* Toggle button for mobile */}

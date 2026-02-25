@@ -7,6 +7,7 @@ import Home from "./../Pages/Home/Home";
 import Stories from "../Pages/Stories/Stories";
 import Testimonials from "../Pages/Testimonials/Testimonials";
 import Store from "../Pages/Store/Store";
+import tswendplate from "../Assets/Images/tswendplate.png";
 import "./App.css"; // Import a CSS file for global styles
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         </main>
         <footer className="footer">
           <p className="text-footer">© {new Date().getFullYear()} - All rights reserved</p>
+          <img className="footer-logo" src={tswendplate} alt="Footer logo" />
         </footer>
       </div>
     </Router>

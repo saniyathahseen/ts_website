@@ -1,10 +1,21 @@
+:root {
+  --brand-color: #c48641; /* basic site color requested */
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "futura-pt";
 }
+
+/* default text color uses brand unless an element sets a specific color */
+body {
+  color: var(--brand-color);
+}
+
 a {
   text-decoration: none;
+  color: var(--brand-color);
 }
 
 .navbar {
