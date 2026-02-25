@@ -1,2 +1,3 @@
 # ts_website
-website for promotio
+website for promotion
+netlify
