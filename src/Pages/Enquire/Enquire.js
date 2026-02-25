@@ -22,8 +22,8 @@ const Enquiry = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+    // TODO: send formData to server or email service
+    // Remove console logging to avoid leaking PII in production
     // Reset form fields
     setFormData({
       fullName: '',
@@ -136,11 +136,14 @@ const Enquiry = () => {
                 required
               ></textarea>
             </div>
-            <button type="button" className="whatsapp-btn">
-              <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
-              </a>
-            </button>
+            <div className="enquire-actions">
+              <button type="submit" className="submit-btn">Send Enquiry</button>
+              <button type="button" className="whatsapp-btn">
+                <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
+                </a>
+              </button>
+            </div>
           </form>
         </div>
       </center>

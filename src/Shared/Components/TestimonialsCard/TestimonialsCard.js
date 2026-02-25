@@ -5,10 +5,9 @@ const TestimonialsCard = forwardRef(({ data }, ref) => {
     return (
         <div className="testimonial-card">
             <div className="testimonial-content text-center rounded shadow-sm py-5 px-4">
-                {/* eslint-disable-next-line jsx-a11y/alt-text */}
                 <img
                     src={data?.src}
-                    alt={data?.title}
+                    alt={data?.title || "Profile image"}
                     className="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
                     width="100"
                 />
