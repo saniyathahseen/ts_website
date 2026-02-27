@@ -1,0 +1,37 @@
+.stories-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-custom {
+  max-width: 50rem;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+}
+
+.card-img-top {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.date {
+  font-size: 14px;
+  color: gray;
+}
+
+.text-muted {
+  font-size: 12px;
+}

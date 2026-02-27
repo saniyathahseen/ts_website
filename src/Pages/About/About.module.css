@@ -1,0 +1,38 @@
+.page {
+  /* page-level wrapper to scope about page styles */
+  display: block;
+}
+
+.page .about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.page .card-title {
+  font-size: 2rem;
+  color: var(--brand-dark);
+  margin-bottom: 15px;
+}
+
+.page .meta p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .page .about-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .page .card-body {
+    text-align: center;
+  }
+
+  .page .card-title {
+    font-size: 1.8rem;
+  }
+}

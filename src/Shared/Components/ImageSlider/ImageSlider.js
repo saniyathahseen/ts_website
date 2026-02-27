@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import "./ImageSlider.css";
+import styles from "./ImageSlider.module.css";
 import "react-multi-carousel/lib/styles.css";
 import img8 from "./../../../Assets/Images/home/8.jpg";
 import img9 from "./../../../Assets/Images/home/9.jpg";
@@ -35,7 +35,7 @@ const ImgData = [
 
 const ImageSlider = () => {
   return (
-    <div className="slider-container">
+    <div className={styles["slider-container"]}>
       <Carousel
         draggable={false}
         showDots={false}
@@ -45,14 +45,14 @@ const ImageSlider = () => {
         autoPlaySpeed={2000}
         keyBoardControl={true}
         transitionDuration={1000}
-        containerClass="carousel-container"
+        containerClass={styles["slider-container"]}
         removeArrowOnDeviceType={["tablet", "mobile"]}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding"
+        dotListClass={styles["custom-dot-list-style"]}
+        itemClass={styles["carousel-item-padding"]}
       >
         {ImgData.map((item) => (
-          <div className="img-container" key={item.title}>
-            <img className="carousel-image" src={item.src} alt={item.title} />
+          <div className={styles["img-container"]} key={item.title}>
+            <img className={styles["carousel-image"]} src={item.src} alt={item.title} />
           </div>
         ))}
       </Carousel>

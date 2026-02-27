@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
+import styles from "./Carousel.module.css";
 import img4 from "./../../../Assets/Images/home/4.jpg";
 import img5 from "./../../../Assets/Images/home/5.jpg";
 import img6 from "./../../../Assets/Images/home/6.jpg";
@@ -16,12 +17,12 @@ const ImgData = [
 
 const CarouselSlider = () => {
   return (
-    <div className="carousel-container">
+    <div className={styles["carousel-container"]}>
       <Carousel fade touch={true} interval={3000}>
         {ImgData.map((item) => (
           <Carousel.Item key={item.title}>
-            <img className="d-block w-100 carousel-image" src={item.src} alt={item.title} />
-            <Carousel.Caption>
+            <img className={`d-block w-100 ${styles["carousel-image"]}`} src={item.src} alt={item.title} />
+            <Carousel.Caption className={styles["carousel-caption"]}>
               <h3>{item.title}</h3>
               <p>{item.caption}</p>
             </Carousel.Caption>

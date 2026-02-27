@@ -157,7 +157,7 @@ a {
   height: 33px;
   width: 70px;
   color: #fff;
-  background-color: #000;
+  background-color: var(--brand-dark);
   cursor: pointer;
 }
 
@@ -189,4 +189,26 @@ a {
   display: flex;
   justify-content: center;
   color: #fff;
+}
+
+/* Responsive fallbacks for navbar height.
+   The runtime JS sets --navbar-height dynamically, but these media-query
+   fallbacks reduce layout shift before JS runs and provide sensible defaults
+   on environments where JS may be delayed. */
+@media (width <= 480px) {
+  :root {
+    --navbar-height: 140px;
+  }
+}
+
+@media (width >= 481px) and (width <= 1024px) {
+  :root {
+    --navbar-height: 120px;
+  }
+}
+
+@media (width >= 1025px) {
+  :root {
+    --navbar-height: 100px;
+  }
 }

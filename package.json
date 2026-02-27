@@ -1,6 +1,6 @@
 {
   "name": "ts_website",
-  "homepage": "https://teamshadow.com",
+  "homepage": "https://saniyathahseen.github.io/ts_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -49,5 +49,9 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "stylelint": "^17.4.0",
+    "stylelint-config-standard": "^40.0.0"
   }
 }

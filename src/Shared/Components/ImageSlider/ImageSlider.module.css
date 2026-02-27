@@ -1,0 +1,36 @@
+/* Carousel Container */
+.slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image:hover {
+  transform: scale(1.05);
+}
+
+.custom-dot-list-style {
+  position: absolute;
+  bottom: 10px;
+}
+
+.carousel-item-padding {
+  padding: 10px;
+}

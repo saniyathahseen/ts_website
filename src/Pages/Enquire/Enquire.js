@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Enquire.css";
+import styles from "./Enquire.module.css";
 import img3 from "./../../Assets/Images/enquire/1.jpg"
 
 const Enquiry = () => {
@@ -43,7 +44,7 @@ const Enquiry = () => {
   };
 
   return (
-    <div id="canvas">
+  <div id="canvas" className={styles.page}>
       <center>
         <div className="card mb-3 text-center sqs-image-shape-container-element has-aspect-ratio" style={{ maxWidth: "50rem", margin: "30px" }}>
           <img style={{ maxWidth: "50rem", maxHeight: "30rem" }} className="card-img-top mx-auto" src={img3} alt={"enquire"} ></img>

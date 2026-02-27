@@ -5,6 +5,7 @@
   "selector-max-id": 1,
     "color-hex-length": "short",
     "selector-class-pattern": null,
+    "media-feature-range-notation": null,
     "keyframes-name-pattern": null
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Stories.css";
+import styles from "./Stories.module.css";
 import StoriesCard from "../../Shared/Components/StoriesCard/StoriesCard";
 import img4 from "./../../Assets/Images/stories/1.jpg";
 import img5 from "./../../Assets/Images/stories/2.jpg";
@@ -37,7 +38,7 @@ const userData = [
 
 const Stories = () => {
   return (
-    <div className="stories-container">
+    <div className={`${styles.page} stories-container`}>
       {userData.map((element) => (
         <StoriesCard data={element} key={element.title} />
       ))}

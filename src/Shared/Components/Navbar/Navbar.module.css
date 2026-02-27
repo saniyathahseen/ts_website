@@ -1,0 +1,47 @@
+/* Navbar Styles (CSS Module) */
+.navbar-custom {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+  padding: 15px 0 25px;
+}
+
+.navbar-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--brand-dark);
+}
+
+.nav-link {
+  font-weight: 600;
+  color: var(--brand-color);
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--brand-dark);
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.navbar-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 40px;
+  }
+}
