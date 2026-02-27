@@ -29,7 +29,7 @@
 
 .date {
   font-size: 14px;
-  color: gray;
+  color: var(--text-color);
 }
 
 .text-color {

@@ -65,12 +65,12 @@ textarea {
 }
 
 .whatsapp-btn a:hover {
-  color: rgb(219 214 214);
+  color: var(--white);
 }
 
 .whatsapp-btn i {
   font-size: 20px;
-  color: rgb(219 214 214);
+  color: var(--white);
 }
 
 .whatsapp-btn:hover {

@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Run color-check
+        run: npm run check-colors
+
       - name: Run stylelint
         run: npx stylelint "src/**/*.css" "src/**/*.module.css" --allow-empty-input
 

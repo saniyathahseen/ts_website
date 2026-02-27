@@ -48,7 +48,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "check-colors": "node tools/check-colors.js"
   },
   "devDependencies": {
     "playwright": "^1.58.2",

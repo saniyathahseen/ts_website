@@ -1,0 +1,7 @@
+#!/bin/sh
+# Simple pre-commit hook to run style and color checks locally.
+echo "Running pre-commit checks: stylelint + color checks"
+npm run check-colors || { echo "Color check failed. Fix hard-coded colors or update src/index.css."; exit 1; }
+npx stylelint "src/**/*.css" "src/**/*.module.css" --allow-empty-input || { echo "Stylelint failed"; exit 1; }
+echo "Pre-commit checks passed."
+exit 0
