@@ -14,13 +14,13 @@
 
 /* Caption Styling */
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(0 0 0 / 60%);
   padding: 10px;
   border-radius: 5px;
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .carousel-container {
     width: 95%;
   }

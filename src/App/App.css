@@ -30,7 +30,7 @@
   display: block;
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .footer-logo {
     left: 10px;
     height: 32px;

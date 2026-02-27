@@ -1,26 +1,26 @@
 /* Navbar Styles */
 .navbar-custom {
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+  padding: 15px 0 25px;
 }
 
 .navbar-title {
   font-weight: bold;
   font-size: 20px;
-  color: #333 !important;
+  color: #333;
 }
 
 /* Navbar Links */
 .navbar-custom .nav-link {
   font-weight: 600;
-  color: #c48641 !important;
+  color: var(--brand-color);
   margin: 0 10px;
   transition: color 0.3s ease-in-out;
 }
 
 .navbar-custom .nav-link:hover {
-  color: #91742b !important;
+  color: var(--brand-dark);
 }
 
 /* Navbar Toggle Button */
@@ -35,14 +35,11 @@
   top: 0;
   width: 100%;
   z-index: 1050;
+
   /* Ensures navbar stays above all other content */
 }
 
-/* Add spacing after navbar */
-body {
-  padding-top: 80px;
-  /* Adjust based on navbar height */
-}
+/* spacing after navbar is handled globally in index.css */
 
 /* Logo sizing and alignment */
 .navbar-logo {
@@ -51,7 +48,7 @@ body {
   display: block;
 }
 
-@media (max-width: 576px) {
+@media (width <= 576px) {
   .navbar-logo {
     height: 40px;
   }

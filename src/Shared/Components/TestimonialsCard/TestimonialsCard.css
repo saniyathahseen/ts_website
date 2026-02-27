@@ -14,7 +14,7 @@
   padding: 30px;
   max-width: 100%;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
   transition: all 0.3s ease-in-out;
 }
 
@@ -52,7 +52,7 @@
 }
 
 /* Adjust spacing for responsiveness */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .testimonial-card {
     margin: 20px auto;
   }

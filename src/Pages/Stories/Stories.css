@@ -1,34 +1,4 @@
-/* General Styles */
-body {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.8em;
-  color: #575757;
-  text-transform: none;
-}
-
-/* Headings */
-h1 {
-  font-weight: 300;
-  line-height: 1.2em;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* Links */
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-a:hover {
-  color: #222;
-}
+/* Stories page styles (typography consolidated into index.css) */
 
 /* Container for Stories */
 .stories-container {
@@ -45,7 +15,7 @@ a:hover {
   max-width: 350px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
@@ -80,34 +50,39 @@ a:hover {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 992px) {
+@media (width <= 992px) {
   .stories-card {
     flex: 1 1 calc(50% - 20px);
   }
+
   h1 {
     font-size: 1.8rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .stories-card {
     flex: 1 1 100%;
   }
+
   h1 {
     font-size: 1.5rem;
   }
+
   .stories-card h2 {
     font-size: 1.3rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   h1 {
     font-size: 1.2rem;
   }
+
   .stories-card h2 {
     font-size: 1.2rem;
   }
+
   .stories-card p {
     font-size: 0.9rem;
   }

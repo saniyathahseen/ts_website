@@ -1,16 +1,49 @@
 :root {
   --brand-color: #c48641; /* basic site color requested */
+  --brand-dark: #91742b; /* darker variant for hover/active */
+  --navbar-height: 100px; /* spacing used to offset fixed navbar; adjust as needed */
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "futura-pt";
+  font-family: futura-pt, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* default text color uses brand unless an element sets a specific color */
 body {
   color: var(--brand-color);
+  padding-top: var(--navbar-height);
+}
+
+/* Global typography (consolidated) */
+html {
+  font-size: 16px; /* base for rem calculations */
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.2em;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+  line-height: 1.5em;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8em;
+  color: #575757;
 }
 
 a {
@@ -28,7 +61,7 @@ a {
 }
 
 .background {
-  background: rgb(255, 255, 255);
+  background: rgb(255 255 255);
   background-blend-mode: darken;
   background-size: cover;
 }
@@ -76,7 +109,7 @@ a {
 #search {
   padding: 5px;
   font-size: 17px;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0 0 0);
   border-radius: 9px;
 }
 
@@ -111,7 +144,7 @@ a {
 
 .text-big {
   font-weight: 500;
-  font-family: "futura-pt";
+  font-family: futura-pt, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 30px;
 }
 
@@ -137,7 +170,7 @@ a {
   height: 200px;
   display: flex;
   align-items: center;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(250 250 250);
   justify-content: space-between;
 }
 
@@ -152,7 +185,7 @@ a {
 .text-footer {
   text-align: center;
   padding: 30px 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: Ubuntu, sans-serif;
   display: flex;
   justify-content: center;
   color: #fff;

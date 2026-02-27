@@ -18,7 +18,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .about-img {
     width: 100%;
     height: auto;

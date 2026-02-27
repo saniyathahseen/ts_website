@@ -15,27 +15,13 @@
   }
 }
 
-/* Header Styles */
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 /* Keyframes */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -49,40 +35,7 @@
   text-align: center;
 }
 
-/* Headings */
-.container h1 {
-  font-family: "futura-pt", sans-serif;
-  color: #222;
-  white-space: pre-wrap;
-  font-weight: 300;
-  line-height: 1.2em;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 1rem;
-}
-
-/* Paragraph Styling */
-.container p {
-  text-align: center;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 300;
-  line-height: 1.8em;
-  font-size: 1rem;
-  margin: 0 0 1.5rem;
-}
-
-/* Subheadings */
-.container h2 {
-  color: #222;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 100;
-  font-size: 1.2rem;
-  letter-spacing: 0.1em;
-  text-transform: lowercase;
-  line-height: 1.5em;
-  margin-bottom: 1rem;
-}
+/* Home page: keep layout and animation; typography is consolidated in index.css */
 
 /* Responsive Grid for Image Cards */
 .card-group {
@@ -96,7 +49,7 @@
 .card {
   flex: 1 1 calc(33.333% - 20px);
   max-width: 350px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
@@ -106,31 +59,35 @@
 }
 
 /* Responsive Adjustments */
-@media (max-width: 992px) {
+@media (width <= 992px) {
   .card {
     flex: 1 1 calc(50% - 20px);
   }
+
   .container h1 {
     font-size: 2rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .card {
     flex: 1 1 100%;
   }
+
   .container h1 {
     font-size: 1.8rem;
   }
+
   .container p {
     font-size: 0.9rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .container h1 {
     font-size: 1.5rem;
   }
+
   .container p {
     font-size: 0.85rem;
   }
