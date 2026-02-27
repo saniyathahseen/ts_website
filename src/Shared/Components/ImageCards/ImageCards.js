@@ -1,8 +1,9 @@
 import React, { forwardRef } from "react";
+import styles from "./ImageCards.module.css";
 
 const ImageCards = forwardRef(({ data }, ref) => {
   return (
-    <div className="card image-card">
+    <div className={`card ${styles["image-card"]}`}>
       {/* <a href={data?.url || "#"} className="card-link" style={{ textDecoration: "none", color: "black" }}> */}
       <img className="card-img-top" src={data?.src} alt={data?.title || "Image"} />
       <div className="card-body">

@@ -29,9 +29,9 @@
 
 .date {
   font-size: 14px;
-  color: gray;
+  color: var(--text-color);
 }
 
-.text-muted {
+.text-color {
   font-size: 12px;
 }

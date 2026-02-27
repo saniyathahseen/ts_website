@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import styles from "./Home.module.css";
 import ImageSlider from "./../../Shared/Components/ImageSlider/ImageSlider";
 import ImageCards from "./../../Shared/Components/ImageCards/ImageCards";
 import CarouselSlider from "./../../Shared/Components/Carousel/Carousel";
@@ -31,7 +32,7 @@ const userData = [
 
 const Home = () => {
   return (
-    <div className="container text-center my-5">
+    <div className={`container text-center my-5 ${styles.pageContainer}`}>
       {/* Carousel Section */}
       <div className="mb-4">
         <CarouselSlider key={"CarouselSlider"} />

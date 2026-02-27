@@ -1,13 +1,11 @@
 /* Card Container */
 .testimonial-card {
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  margin: 30px auto; /* Centering and spacing */
+  margin: 30px auto;
   max-width: 450px;
 }
 
-/* Testimonial Content */
 .testimonial-content {
   background: var(--white);
   border-radius: 10px;
@@ -22,15 +20,13 @@
   transform: scale(1.05);
 }
 
-/* Image Styling */
 .img-fluid {
   border-radius: 50%;
   border: 3px solid var(--white);
-  width: 300px; /* Increased size */
+  width: 300px;
   height: 300px;
 }
 
-/* Blockquote Styling */
 .blockquote-custom {
   font-style: italic;
   font-size: 18px;
@@ -51,7 +47,6 @@
   line-height: 1.6;
 }
 
-/* Adjust spacing for responsiveness */
 @media (max-width: 768px) {
   .testimonial-card {
     margin: 20px auto;

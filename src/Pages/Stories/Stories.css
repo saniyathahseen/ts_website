@@ -13,7 +13,7 @@
 .stories-card {
   flex: 1 1 calc(33.333% - 20px);
   max-width: 350px;
-  background: #fff;
+  background: var(--white);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   overflow: hidden;
@@ -46,11 +46,11 @@
 
 .stories-card p {
   font-size: 1rem;
-  color: #777;
+  color: var(--text-color);
 }
 
 /* Responsive Adjustments */
-@media (width <= 992px) {
+@media (max-width: 992px) {
   .stories-card {
     flex: 1 1 calc(50% - 20px);
   }
@@ -60,7 +60,7 @@
   }
 }
 
-@media (width <= 768px) {
+@media (max-width: 768px) {
   .stories-card {
     flex: 1 1 100%;
   }
@@ -74,7 +74,7 @@
   }
 }
 
-@media (width <= 480px) {
+@media (max-width: 480px) {
   h1 {
     font-size: 1.2rem;
   }

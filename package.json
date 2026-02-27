@@ -1,6 +1,6 @@
 {
   "name": "ts_website",
-  "homepage": "https://teamshadow.com",
+  "homepage": "https://saniyathahseen.github.io/ts_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -48,6 +48,12 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "check-colors": "node tools/check-colors.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2",
+    "stylelint": "^17.4.0",
+    "stylelint-config-standard": "^40.0.0"
   }
 }

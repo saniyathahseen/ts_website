@@ -1,10 +1,11 @@
 import React from "react";
 import "./About.css";
+import styles from "./About.module.css";
 import img4 from "./../../Assets/Images/about/1.jpg";
 
 const About = () => {
   return (
-    <div className="container d-flex justify-content-center align-items-center min-vh-100">
+    <div className={`container d-flex justify-content-center align-items-center min-vh-100 ${styles.page}`}>
       <div className="row justify-content-center w-100">
         <div className="col-lg-8">
           <div className="card text-center shadow-lg border-0 p-4">
