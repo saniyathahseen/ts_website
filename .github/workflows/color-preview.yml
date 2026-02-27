@@ -1,0 +1,55 @@
+name: Color Preview & Quality Checks
+
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'tools/**'
+      - '.github/workflows/**'
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run color-check preview
+        run: |
+          node tools/check-colors.js --fix --dry-run --preview > tools/check-colors-preview.txt || true
+
+      - name: Run stylelint
+        run: npx stylelint "src/**/*.{css,module.css}" --max-warnings=0 || true
+
+      - name: Build
+        run: npm run build
+
+      - name: Start static server
+        run: npx --yes http-server build -p 3002 -c-1 &
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Capture screenshots
+        run: |
+          SCREENSHOT_BASE=http://localhost:3002 node tools/screenshot.js || true
+
+      - name: Upload check-colors preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: check-colors-preview
+          path: tools/check-colors-preview.txt
+
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-screenshots
+          path: build_snapshots/

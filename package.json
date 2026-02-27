@@ -50,6 +50,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "check-colors": "node tools/check-colors.js"
+    ,
+    "find-unused-assets": "node tools/find-unused-assets.js"
   },
   "devDependencies": {
     "playwright": "^1.58.2",
