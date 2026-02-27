@@ -14,15 +14,21 @@ const rgbReGlobal = /rgb\([^)]*\)/ig;
 const keywordRe = /\b(white|black|gray|grey|red|blue|green|yellow|pink|orange)\b/i;
 
 const fixesEnabled = process.argv.includes('--fix');
+const dryRun = process.argv.includes('--dry-run');
 
 // map of safe hex replacements (lowercase keys)
 const safeHexMap = {
   '#c48641': 'var(--brand-color)',
   '#91742b': 'var(--brand-dark)',
+  '#fbf9f8': 'var(--white)',
   '#ffffff': 'var(--white)',
   '#fff': 'var(--white)',
   '#000000': 'var(--black)',
-  '#000': 'var(--black)'
+  '#000': 'var(--black)',
+  '#facd9a': 'var(--text-color)',
+  '#222222': 'var(--page-footer-bg)',
+  '#222': 'var(--page-footer-bg)',
+  '#c0392b': 'var(--error-color)'
 };
 
 function rgbToHex(r, g, b) {
@@ -140,8 +146,12 @@ for (const file of files) {
     }
   }
 
-  // persist file changes if fixes were applied
+  // persist file changes if fixes were applied (and not dry-run)
   if (fixesEnabled && fileChanged) {
+    if (dryRun) {
+      // do not write files in dry-run mode
+      continue;
+    }
     try {
       fs.writeFileSync(file, lines.join('\n'), 'utf8');
     } catch (err) {
