@@ -7,13 +7,13 @@
 
 .card-title {
   font-size: 2rem;
-  color: #333;
+  color: var(--brand-dark);
   margin-bottom: 15px;
 }
 
 .meta p {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-color);
   line-height: 1.6;
 }
 

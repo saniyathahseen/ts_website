@@ -1,6 +1,6 @@
 /* Navbar Styles (CSS Module) */
 .navbar-custom {
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
   padding: 15px 0 25px;
 }

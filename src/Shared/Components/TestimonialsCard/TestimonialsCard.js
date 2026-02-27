@@ -12,11 +12,11 @@ const TestimonialsCard = forwardRef(({ data }, ref) => {
                     width="100"
                 />
                 <h5 className="mb-0">{data?.name || "John Doe"}</h5>
-                <span className="small text-uppercase text-muted">{data?.position || "Founder"}</span>
+                <span className="small text-uppercase text-color">{data?.position || "Founder"}</span>
 
                 <blockquote className={`${styles["blockquote-custom"]} bg-white p-4 shadow rounded mb-5 text-center`}>
                     <h4 className="mb-3 font-weight-bold">{data?.title || "Testimonial"}</h4>
-                    <p className="text-muted fst-italic">{data?.review || "This is a sample testimonial text."}</p>
+                    <p className="text-color fst-italic">{data?.review || "This is a sample testimonial text."}</p>
                 </blockquote>
             </div>
         </div>

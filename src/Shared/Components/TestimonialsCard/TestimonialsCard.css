@@ -9,7 +9,7 @@
 
 /* Testimonial Content */
 .testimonial-content {
-  background: #fff;
+  background: var(--white);
   border-radius: 10px;
   padding: 30px;
   max-width: 100%;
@@ -25,7 +25,7 @@
 /* Image Styling */
 .img-fluid {
   border-radius: 50%;
-  border: 3px solid #ddd;
+  border: 3px solid var(--white);
   width: 300px; /* Increased size */
   height: 300px;
 }
@@ -34,15 +34,15 @@
 .blockquote-custom {
   font-style: italic;
   font-size: 18px;
-  color: #555;
-  border-left: 5px solid #6b6032;
+  color: var(--text-color);
+  border-left: 5px solid var(--brand-dark);
   padding-left: 15px;
   margin-top: 20px;
 }
 
 .blockquote-custom h4 {
   font-weight: bold;
-  color: #333;
+  color: var(--brand-dark);
   margin-bottom: 10px;
 }
 
@@ -52,7 +52,7 @@
 }
 
 /* Adjust spacing for responsiveness */
-@media (width <= 768px) {
+@media (max-width: 768px) {
   .testimonial-card {
     margin: 20px auto;
   }

@@ -1,7 +1,11 @@
 :root {
   --brand-color: #c48641; /* basic site color requested */
   --brand-dark: #91742b; /* darker variant for hover/active */
+  --page-footer-bg: #222; /* dark footer background fallback */
+  --white: #fbf9f8; /* white */
+  --error-color: #c0392b; /* standard error color used in components */
   --navbar-height: 100px; /* spacing used to offset fixed navbar; adjust as needed */
+  --text-color: #facd9a; /* neutral text for secondary content */
 }
 
 * {
@@ -43,7 +47,7 @@ h2 {
 p {
   font-size: 1rem;
   line-height: 1.8em;
-  color: #575757;
+  color: var(--text-color);
 }
 
 a {
@@ -67,13 +71,7 @@ a {
 }
 
 .footer {
-  background-color: #000;
-}
-
-.nav-list {
-  width: 70%;
-  display: flex;
-  align-items: center;
+  background-color: var(--page-footer-bg);
 }
 
 .logo {
@@ -87,31 +85,14 @@ a {
   border-radius: 50px;
 }
 
-.nav-list li {
-  list-style: none;
-  padding: 26px 30px;
-}
 
-.nav-list li a {
-  text-decoration: none;
-  color: #000;
-}
-
-.nav-list li a:hover {
-  color: grey;
-}
 
 .rightnav {
   width: 30%;
   text-align: right;
 }
 
-#search {
-  padding: 5px;
-  font-size: 17px;
-  border: 2px solid rgb(0 0 0);
-  border-radius: 9px;
-}
+
 
 .box-main {
   display: flex;
@@ -136,7 +117,7 @@ a {
 
 .secondhalf img {
   width: 70%;
-  border: 4px solid white;
+  border: 4px solid var(--white);
   border-radius: 150px;
   display: block;
   margin: auto;
@@ -156,7 +137,7 @@ a {
   margin-left: 20px;
   height: 33px;
   width: 70px;
-  color: #fff;
+  color: var(--white);
   background-color: var(--brand-dark);
   cursor: pointer;
 }
@@ -188,7 +169,7 @@ a {
   font-family: Ubuntu, sans-serif;
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: var(--white);
 }
 
 /* Responsive fallbacks for navbar height.

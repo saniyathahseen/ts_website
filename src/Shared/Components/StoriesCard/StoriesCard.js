@@ -18,7 +18,7 @@ const StoriesCard = forwardRef(({ data, mode }, ref) => {
           </div>
           <p className="card-text">{data?.review}</p>
           <p className="card-text">
-            <small className={`text-muted ${styles["text-muted"]}`}>Last updated 3 mins ago</small>
+            <small className={`text-color ${styles["text-color"]}`}>Last updated 3 mins ago</small>
           </p>
         </div>
       </div>

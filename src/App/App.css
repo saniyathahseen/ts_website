@@ -11,8 +11,8 @@
 
 .footer {
   text-align: center; /* keep footer text centered */
-  background: #222;
-  color: #fff;
+  color: var(--white);
+  background: var(--page-footer-bg);
   padding: 10px 20px;
   position: relative;
   bottom: 0;

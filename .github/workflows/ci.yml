@@ -25,3 +25,23 @@ jobs:
 
       - name: Build (production)
         run: npm run build --silent
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      - name: Run screenshots (Playwright)
+        env:
+          SCREENSHOT_BASE: http://localhost:8080
+        run: |
+          # Serve the build and run the screenshot script
+          npx http-server build -p 8080 &
+          pid=$!
+          sleep 1
+          node tools/screenshot.js
+          kill $pid || true
+
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: build_snapshots/
