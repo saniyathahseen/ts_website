@@ -15,6 +15,7 @@ const keywordRe = /\b(white|black|gray|grey|red|blue|green|yellow|pink|orange)\b
 
 const fixesEnabled = process.argv.includes('--fix');
 const dryRun = process.argv.includes('--dry-run');
+const preview = process.argv.includes('--preview') || process.argv.includes('--diff');
 
 // map of safe hex replacements (lowercase keys)
 const safeHexMap = {
@@ -156,6 +157,62 @@ for (const file of files) {
       fs.writeFileSync(file, lines.join('\n'), 'utf8');
     } catch (err) {
       console.error('Failed to write fixes to', file, err);
+    }
+  }
+}
+
+// If preview/diff requested, show a simple line-by-line diff for changed files
+if (preview && replacements.length) {
+  const grouped = replacements.reduce((acc, r) => {
+    acc[r.file] = acc[r.file] || [];
+    acc[r.file].push(r);
+    return acc;
+  }, {});
+
+  console.log('\nPreview diffs for files with safe replacements:');
+  for (const file of Object.keys(grouped)) {
+    try {
+      const orig = fs.readFileSync(file, 'utf8').split(/\r?\n/);
+      // re-run the replacement logic on the original content (in-memory) to build the modified content
+      let modified = orig.slice();
+      for (let i = 0; i < modified.length; i++) {
+        let line = modified[i];
+        if (!line) continue;
+        if (line.includes('var(--')) continue;
+        const hexMatches = line.match(hexReGlobal);
+        if (hexMatches) {
+          for (const h of hexMatches) {
+            const key = h.toLowerCase();
+            if (safeHexMap[key]) line = line.split(h).join(safeHexMap[key]);
+          }
+        }
+        const rgbMatches = line.match(rgbReGlobal);
+        if (rgbMatches) {
+          for (const rtext of rgbMatches) {
+            if (rtext.includes('/')) continue;
+            const nums = rtext.replace(/[rgb()]/ig, '').replace(/\//g, '').replace(/%/g, '').trim();
+            const parts = nums.split(/[,\s]+/).filter(Boolean).slice(0,3);
+            if (parts.length === 3) {
+              const hex = rgbToHex(parts[0], parts[1], parts[2]);
+              if (safeHexMap[hex]) line = line.split(rtext).join(safeHexMap[hex]);
+            }
+          }
+        }
+        modified[i] = line;
+      }
+
+      console.log('\n--- ' + file + ' (preview) ---');
+      const max = Math.max(orig.length, modified.length);
+      for (let i = 0; i < max; i++) {
+        const o = orig[i] === undefined ? '' : orig[i];
+        const m = modified[i] === undefined ? '' : modified[i];
+        if (o !== m) {
+          console.log(`-${o}`);
+          console.log(`+${m}`);
+        }
+      }
+    } catch (e) {
+      console.error('Could not preview diff for', file, e.message);
     }
   }
 }
