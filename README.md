@@ -69,6 +69,28 @@ CI behavior (what runs on PR)
 - Install Playwright browsers and run `tools/screenshot.js` against the built site (served on a temporary port), capturing screenshots for visual review.
 - Upload the screenshots as job artifacts for reviewers to inspect.
 
+Additional developer tools
+
+- `tools/check-colors.js` — finds hard-coded colors outside `src/index.css` and can optionally apply conservative replacements.
+	- Usage examples:
+		- Preview proposed replacements (no files written):
+			```bash
+			node tools/check-colors.js --fix --dry-run --preview
+			```
+		- Apply safe replacements (writes files):
+			```bash
+			node tools/check-colors.js --fix
+			```
+
+- `tools/find-unused-assets.js` — scans `src/Assets` for image and json files that appear unused and writes candidates to `tools/unused-assets.txt`.
+	- Run with:
+		```bash
+		npm run find-unused-assets
+		```
+
+- VSCode snippet file: `.vscode/css-tokens.code-snippets` contains shortcuts to insert common CSS tokens such as `var(--brand-color)` and `var(--navbar-height)`.
+
+
 Local checks and contribution guidance
 
 - Run `npm run check-colors` and `npx stylelint "src/**/*.css" "src/**/*.module.css"` before opening a PR.
