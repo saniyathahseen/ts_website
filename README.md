@@ -34,6 +34,52 @@ git config core.hooksPath .githooks
 
 This will run the color check and `stylelint` before commits. The CI workflow also runs the color-check step and will fail the build if new hard-coded colors are introduced.
 
+Contributor token examples
+
+Use these examples when adding or updating styles so the team has consistent, semantic token usage:
+
+- Buttons & CTAs
+	- Primary background: `background-color: var(--brand-color);`
+	- Primary hover/active: `background-color: var(--brand-dark);`
+	- Button text on brand: `color: var(--white);`
+
+- Navigation / header
+	- Navbar background (surface): `background-color: var(--white);`
+	- Navbar title / active link: `color: var(--brand-color);`
+
+- Body text and copy
+	- Body copy (primary): `color: var(--text-color);`
+	- Muted / secondary copy: `color: var(--on-dark-muted);` (or add a `--text-muted` token when needed)
+
+- Cards & surfaces
+	- Card background: `background: var(--white);`
+	- Subtle card background: `background: var(--bg-muted);`
+	- Card border: `border: 1px solid var(--border-muted);`
+
+- Alerts and validation
+	- Error text / borders: `color: var(--error-color);` or `border-color: var(--error-color);`
+
+If you aren't sure which token to use, prefer the semantic choice (surface/text/brand) rather than matching a specific hex.
+
+CI behavior (what runs on PR)
+
+- Run the color-check script: `npm run check-colors` — this will fail the CI if any hard-coded colors (hex literals, rgb(...) without alpha, or CSS color keywords used in properties) appear outside `src/index.css`.
+- Run `stylelint` across `src/**/*.css` and `src/**/*.module.css`.
+- Run a production build (`npm run build`) to catch compile-time and bundling issues.
+- Install Playwright browsers and run `tools/screenshot.js` against the built site (served on a temporary port), capturing screenshots for visual review.
+- Upload the screenshots as job artifacts for reviewers to inspect.
+
+Local checks and contribution guidance
+
+- Run `npm run check-colors` and `npx stylelint "src/**/*.css" "src/**/*.module.css"` before opening a PR.
+- Optionally enable the provided pre-commit hook so checks run automatically when you commit:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+These lightweight checks help keep styling consistent and prevent accidental regressions.
+
 The codebase is being migrated to CSS Modules. Component styles live alongside their components as `*.module.css` and are imported into the component JS files. When adding or editing styles prefer updating the centralized variables in `src/index.css` rather than sprinkling hard-coded color values.
 
 Build: `npm run build` (create-react-app)
