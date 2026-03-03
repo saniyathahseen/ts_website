@@ -1,5 +1,4 @@
 import React from "react";
-import "./Stories.css";
 import styles from "./Stories.module.css";
 import StoriesCard from "../../Shared/Components/StoriesCard/StoriesCard";
 import img4 from "./../../Assets/Images/stories/1.jpg";

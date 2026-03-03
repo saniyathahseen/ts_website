@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Enquire.css";
 import styles from "./Enquire.module.css";
 import img3 from "./../../Assets/Images/enquire/1.jpg"
 

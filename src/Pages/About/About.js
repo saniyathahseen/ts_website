@@ -1,5 +1,4 @@
 import React from "react";
-import "./About.css";
 import styles from "./About.module.css";
 import img4 from "./../../Assets/Images/about/1.jpg";
 
