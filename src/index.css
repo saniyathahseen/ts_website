@@ -1,11 +1,20 @@
 :root {
-  --brand-color: #c48641; /* basic site color requested */
-  --brand-dark: #91742b; /* darker variant for hover/active */
-  --page-footer-bg: #222; /* dark footer background fallback */
-  --white: #fbf9f8; /* white */
-  --error-color: #c0392b; /* standard error color used in components */
-  --navbar-height: 100px; /* spacing used to offset fixed navbar; adjust as needed */
-  --text-color: #facd9a; /* neutral text for secondary content */
+  --brand-color: #c48641;
+  /* basic site color requested */
+  --brand-dark: #91742b;
+  /* darker variant for hover/active */
+  --page-footer-bg: #222;
+  /* dark footer background fallback */
+  --white: #fbf9f8;
+  /* white */
+  --error-color: #c0392b;
+  /* standard error color used in components */
+  --navbar-height: 100px;
+  /* spacing used to offset fixed navbar; adjust as needed */
+  --text-color: #facd9a;
+  /* neutral text for secondary content */
+  /* Override Bootstrap variable */
+  --bs-heading-color: var(--brand-color)
 }
 
 * {
@@ -22,7 +31,8 @@ body {
 
 /* Global typography (consolidated) */
 html {
-  font-size: 16px; /* base for rem calculations */
+  font-size: 16px;
+  /* base for rem calculations */
 }
 
 h1 {
@@ -176,19 +186,19 @@ a {
    The runtime JS sets --navbar-height dynamically, but these media-query
    fallbacks reduce layout shift before JS runs and provide sensible defaults
    on environments where JS may be delayed. */
-@media (width <= 480px) {
+@media (width <=480px) {
   :root {
     --navbar-height: 140px;
   }
 }
 
-@media (width >= 481px) and (width <= 1024px) {
+@media (width >=481px) and (width <=1024px) {
   :root {
     --navbar-height: 120px;
   }
 }
 
-@media (width >= 1025px) {
+@media (width >=1025px) {
   :root {
     --navbar-height: 100px;
   }

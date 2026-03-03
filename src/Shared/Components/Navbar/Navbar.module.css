@@ -13,7 +13,7 @@
 
 .nav-link {
   font-weight: 600;
-  color: var(--brand-color);
+  color: var(--brand-color) !important;
   margin: 0 10px;
   transition: color 0.3s ease-in-out;
 }

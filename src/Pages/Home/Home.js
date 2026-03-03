@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.css";
 import styles from "./Home.module.css";
 import ImageSlider from "./../../Shared/Components/ImageSlider/ImageSlider";
 import ImageCards from "./../../Shared/Components/ImageCards/ImageCards";
